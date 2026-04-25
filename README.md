@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/1220916325.svg)](https://doi.org/10.5281/zenodo.19764654)
+
+
 # Burst Detection Framework
 
 A measurement framework for detecting high-velocity events in time-resolved social media data. This project reconstructs post growth trajectories from repeated observations and identifies burst-like behavior using simple, interpretable rate-based metrics.
