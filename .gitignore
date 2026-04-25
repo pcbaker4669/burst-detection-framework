@@ -1,0 +1,70 @@
+# ----------------------------
+# ENV / SECRETS
+# ----------------------------
+.env
+*.env
+config_local.py
+
+# ----------------------------
+# PYTHON
+# ----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# ----------------------------
+# VIRTUAL ENVIRONMENTS
+# ----------------------------
+.venv/
+venv/
+env/
+
+# ----------------------------
+# IDE (PyCharm / VSCode)
+# ----------------------------
+.idea/
+.vscode/
+
+# ----------------------------
+# OS FILES
+# ----------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# DATA (LARGE FILES)
+# ----------------------------
+data/
+derived/
+comments/
+
+# Allow small reproducible samples
+!data_sample/
+!data_sample/**
+!derived_sample/
+!derived_sample/**
+!derived_sample/all_post_summary.csv
+
+# ----------------------------
+# FIGURES (OPTIONAL)
+# ----------------------------
+# If you regenerate figures each run, ignore them:
+# figures/
+
+# If you want to KEEP figures for the paper, comment the above out
+
+# ----------------------------
+# LOGS / OUTPUTS
+# ----------------------------
+*.log
+manifest_log.csv
+burst_posts*.csv
+all_post_summary.csv
+
+# ----------------------------
+# TEMP / SCRATCH
+# ----------------------------
+*.tmp
+*.bak
