@@ -8,7 +8,14 @@ def main():
 
     # 1. Load data
     df = load_all_summaries("derived")
-    print("Total rows:", len(df))
+    print("Total rows before deduplication:", len(df))
+
+    # Deduplicate posts by keeping the row with the highest observed max_score_rate
+    df = df.sort_values("max_score_rate", ascending=False)
+    df = df.drop_duplicates(subset=["post_id"], keep="first")
+    df = df.reset_index(drop=True)
+
+    print("Total unique posts after deduplication:", len(df))
     print("Columns:", list(df.columns))
 
     # 2. Basic stats
