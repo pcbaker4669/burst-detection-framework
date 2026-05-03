@@ -1,5 +1,4 @@
-[![DOI](https://zenodo.org/badge/1220916325.svg)](https://doi.org/10.5281/zenodo.19764654)
-
+[![DOI](https://zenodo.org/badge/1220916325.svg)](https://doi.org/10.5281/zenodo.20010106)
 
 # Burst Detection Framework
 
